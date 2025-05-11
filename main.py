@@ -29,7 +29,7 @@ def extract_chapters_from_epub(epub_path):
             chapter_number += 1
     return chapters
 
-async def text_to_speech(text, output_audio_path, voice="fr-FR-DeniseNeural"):
+async def text_to_speech(text, output_audio_path, voice="fr-FR-VivienneMultilingualNeural"):
     communicate = edge_tts.Communicate(text, voice=voice)
     await communicate.save(output_audio_path)
 
